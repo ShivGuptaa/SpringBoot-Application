@@ -29,6 +29,7 @@ public class EmployeeController {
 	{
 		return new ResponseEntity<>(employeeService.saveEmployee(employeeRequest),HttpStatus.CREATED);
 	}
+	
 
 	@GetMapping("/fetchAll")
 	public ResponseEntity<List<Employee>> getAllEmployee()
